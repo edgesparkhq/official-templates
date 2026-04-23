@@ -1,0 +1,407 @@
+{
+  "app": {
+    "title": "바운티 미션 플랫폼",
+    "loading": "로딩 중..."
+  },
+  "nav": {
+    "tasks": "태스크 전시",
+    "submissions": "제출한 태스크",
+    "profile": "프로필",
+    "admin": "관리 센터"
+  },
+  "user": {
+    "admin": "관리자",
+    "user": "사용자"
+  },
+  "introduction": {
+    "title": "바운티 미션 게임플레이",
+    "subtitle": "바운티 미션에 참여하여 실력을 보여주고 풍부한 보상을 획득하세요!",
+    "steps": {
+      "select": {
+        "title": "미션 선택",
+        "description": "사용 가능한 바운티 미션을 둘러보고 실력에 맞는 프로젝트를 선택하세요"
+      },
+      "submit": {
+        "title": "작품 제출",
+        "description": "계정에 로그인하여 화요일 정오 12:00 UTC-0까지 지난주 태스크의 프로젝트 링크를 제출하세요"
+      },
+      "evaluate": {
+        "title": "평가 및 수상",
+        "description": "관리자가 심사하고 평가하며, 수요일 정오 12:00 UTC-0에 지난주 태스크 진행 상황을 업데이트합니다"
+      },
+      "reward": {
+        "title": "보상 획득",
+        "description": "수상자는 해당하는 바운티 보상을 받습니다. 개인 페이지 정보 작성을 반드시 완료해주세요"
+      }
+    },
+    "rules": {
+      "title": "미션 가이드라인",
+      "items": [
+        "미션 상태: Open(제출 접수), Pending(심사 중), Closed(종료)",
+        "미션 요구사항: 1) 바운티 미션 설명은 영감을 위한 것일 뿐—자유롭게 창작하고 표현하세요; 더 매력적일수록 좋습니다. 2) 프로젝트는 세련된 UI와 영어 버전을 갖추고 완전히 기능해야 합니다(다국어 지원이 선호됨). 데모는 허용되지 않습니다. 3) 모든 프로젝트는 오리지널 작품이어야 합니다. 리믹스나 표절은 엄격히 금지됩니다.",
+        "수상 프로젝트 보기 방법: \"내 제출\"을 통해 제출한 미션 상태를 확인하거나, \"종료된\" 미션으로 이동하여 \"수상 프로젝트 보기\"를 클릭하세요.",
+        "미션 제출: 미션당 한 번의 제출, 편집 가능(\"내 제출\" → \"편집\"으로 이동).",
+        "보상 알림: \"프로필\" 모듈에서 개인 정보를 정확하게 업데이트하여 수상 후 일주일 내에 보상을 받을 수 있도록 하세요. 부정확한 정보로 인한 결제 오류에 대해 플랫폼은 책임지지 않습니다."
+      ]
+    }
+  },
+  "foundingCreatorBadge": {
+    "label": "창립 크리에이터",
+    "ariaLabel": "창립 크리에이터 프로필 방문"
+  },
+  "tasks": {
+    "sort": "정렬:",
+    "sortOptions": {
+      "created_at": "게시 시간",
+      "reward_amount": "바운티 금액"
+    },
+    "status": "상태:",
+    "statusOptions": {
+      "all": "전체",
+      "Open": "진행 중",
+      "Pending": "대기 중",
+      "Closed": "종료"
+    },
+    "statusLabels": {
+      "Open": "진행 중",
+      "Pending": "대기 중",
+      "Closed": "종료"
+    },
+    "date": "게시 날짜:",
+    "startDate": "시작 날짜:",
+    "endDate": "종료 날짜:",
+    "noAvailableDates": "사용 가능한 날짜가 없습니다",
+    "loading": "태스크 로딩 중...",
+    "pagination": "{{current}}/{{total}}페이지",
+    "completed": "완료",
+    "viewWinnerProject": "수상 프로젝트 보기",
+    "participants": "명 참여",
+    "submitTask": "미션 제출",
+    "cannotSubmit": "제출 불가",
+    "comment": "댓글",
+    "noTasks": "조건에 맞는 태스크가 없습니다",
+    "submitDialog": {
+      "title": "태스크 제출: {{title}}",
+      "projectUrl": "프로젝트 URL *",
+      "placeholder": "https://your-project-url.com",
+      "note": "유효한 프로젝트 URL을 입력하고 링크에 정상적으로 접근할 수 있는지 확인해 주세요",
+      "socialMediaUrl": "소셜 미디어 공유 URL *",
+      "socialMediaPlaceholder": "모든 소셜 미디어 플랫폼의 공유 링크",
+      "socialMediaNote": "프로젝트의 유효한 소셜 미디어 공유 링크를 제공해주세요. 소셜 미디어에 공유한 사용자만이 수상자 선정 대상이 됩니다.",
+      "submit": "제출 확인",
+      "submitting": "제출 중...",
+      "cancel": "취소",
+      "invalidUrl": "유효한 https:// URL을 입력해주세요",
+      "invalidSocialUrl": "유효한 소셜 미디어 공유 링크를 제공해주세요 (모든 소셜 미디어 플랫폼 지원)"
+    },
+    "comments": {
+      "title": "태스크 댓글",
+      "placeholder": "댓글을 작성하세요...",
+      "send": "전송",
+      "noComments": "아직 댓글이 없습니다. 첫 번째 댓글을 작성해 보세요!",
+      "anonymous": "익명 사용자",
+      "viewAll": "모든 댓글 보기 ({{count}}개)",
+      "reply": "답글",
+      "allComments": "모든 댓글 ({{count}}개)",
+      "replyingTo": "{{name}}에게 답글",
+      "cancelReply": "답글 취소"
+    }
+  },
+  "submissions": {
+    "totalSubmissions": "총 제출 수",
+    "awards": "수상 횟수",
+    "pending": "심사 대기",
+    "statusLabels": {
+      "submitted": "제출 완료",
+      "not_awarded": "수상하지 못함",
+      "awarded": "수상"
+    },
+    "bounty": "바운티: ${{amount}}",
+    "submitTime": "제출 시간: {{time}}",
+    "viewProject": "프로젝트 보기",
+    "reviewNotes": "심사 의견:",
+    "awardedWork": "🎉 수상 작품",
+    "noSubmissions": "제출 기록이 없습니다",
+    "noSubmissionsDesc": "미션 전시 페이지에서 바운티 미션에 참여하세요!"
+  },
+  "admin": {
+    "operations": "관리 작업",
+    "publishTask": "새 태스크 발행",
+    "filters": "필터:",
+    "statusFilter": "전체 상태",
+    "dateFilter": {
+      "all": "전체 기간",
+      "today": "오늘",
+      "week": "이번 주",
+      "month": "이번 달"
+    },
+    "tabs": {
+      "users": "사용자 관리",
+      "countdown": "카운트다운 설정",
+      "emptyTitle": "{{status}} 태스크가 없습니다",
+      "emptyOpen": "현재 진행 중인 태스크가 없습니다. 위 버튼을 클릭하여 새 태스크를 만드세요.",
+      "emptyPending": "현재 심사 중인 태스크가 없습니다.",
+      "emptyClosed": "종료된 태스크가 없습니다."
+    },
+    "batchOperations": {
+      "open": "일괄 개방",
+      "crowd": "일괄 중단",
+      "close": "일괄 종료",
+      "selectAll": "전체 선택",
+      "unselectAll": "선택 해제",
+      "selectedTasks": "{{selected}} / {{total}} 개 태스크 선택됨",
+      "selectedSubmissions": "{{selected}} / {{total}} 개 제출물 선택됨",
+      "batchOpen": "일괄 개방",
+      "batchPending": "일괄 심사",
+      "batchClose": "일괄 종료",
+      "batchAward": "일괄 수상",
+      "batchNotAward": "일괄 미수상",
+      "onlySingleHint": "(단일 선택만 가능)",
+      "onlyOneAwardedTitle": "태스크당 하나의 제출물만 수상할 수 있습니다",
+      "onlyOneAwarded": "태스크당 하나의 제출물만 수상할 수 있습니다. 하나의 제출물만 선택해주세요.",
+      "confirmBatchStatus": "선택한 {{count}}개 태스크의 상태를 {{status}}(으)로 변경하시겠습니까?",
+      "confirmBatchStatusSubmissions": "선택한 {{count}}개 제출물을 {{status}} 상태로 설정하시겠습니까?",
+      "batchSuccess": "{{count}}개 태스크의 상태가 성공적으로 업데이트되었습니다",
+      "batchSubmissionSuccess": "{{count}}개 제출물이 {{status}} 상태로 설정되었습니다",
+      "batchFailed": "일괄 작업에 실패했습니다: ",
+      "batchFailedGeneric": "일괄 작업에 실패했습니다. 나중에 다시 시도해주세요",
+      "batchUpdateFailedGeneric": "일괄 업데이트에 실패했습니다. 나중에 다시 시도해주세요",
+      "noTasksSelected": "먼저 일괄 작업할 태스크를 선택해주세요",
+      "noSubmissionsSelected": "먼저 일괄 작업할 제출물을 선택해주세요",
+      "statusAwarded": "수상",
+      "statusNotAwarded": "미수상"
+    },
+    "taskCard": {
+      "viewSubmissions": "제출 보기",
+      "edit": "태스크 편집",
+      "delete": "태스크 삭제",
+      "participants": "{{count}}명 참여",
+      "winnerLink": "수상 프로젝트 링크"
+    },
+    "submissions": {
+      "title": "태스크 제출 관리",
+      "noSubmissions": "제출이 없습니다",
+      "award": "수상으로 설정",
+      "notAward": "수상하지 못함으로 설정",
+      "viewLink": "프로젝트 링크 보기",
+      "notes": "비고:",
+      "noNotes": "심사 의견이 없습니다",
+      "notesPlaceholder": "심사 의견을 입력하세요...",
+      "editNotes": "Review Notes 편집",
+      "projectLinkLabel": "프로젝트 링크:",
+      "editUrlPlaceholder": "새로운 프로젝트 링크 입력",
+      "saveEdit": "저장",
+      "cancelEdit": "취소",
+      "deleteSubmission": "제출 삭제"
+    },
+    "createTask": {
+      "title": "새 태스크 발행",
+      "taskTitle": "태스크 제목 *",
+      "taskDescription": "태스크 설명 *",
+      "coverImage": "커버 이미지 URL",
+      "bountyAmount": "바운티 금액 *",
+      "publish": "태스크 발행",
+      "cancel": "취소",
+      "titlePlaceholder": "태스크 제목을 입력하세요",
+      "descriptionPlaceholder": "태스크 요구사항과 내용을 자세히 설명해주세요",
+      "uploadImage": "이미지 업로드",
+      "orSeparator": "또는",
+      "imageUrlPlaceholder": "또는 이미지 URL을 입력하세요",
+      "bountyPlaceholder": "바운티 금액을 입력하세요",
+      "publishDateLabel": "게시 날짜",
+      "publishDateHint": "설정하지 않으면 현재 시간이 게시 시간으로 사용됩니다",
+      "initialParticipantsLabel": "초기 참여자 수",
+      "initialParticipantsPlaceholder": "초기 참여자 수 설정 (선택사항)",
+      "initialParticipantsHint": "태스크의 초기 참여자 수를 설정합니다. 이후 실제 제출물에 따라 자동으로 업데이트됩니다",
+      "winnerUrlLabel": "수상 프로젝트 URL",
+      "winnerUrlPlaceholder": "수상 프로젝트의 URL 입력 (선택사항)",
+      "winnerUrlHint": "수상 프로젝트 URL을 설정하면 태스크 상태가 자동으로 Closed로 변경됩니다"
+    },
+    "editTask": {
+      "title": "태스크 편집",
+      "taskTitle": "태스크 제목",
+      "taskTitlePlaceholder": "태스크 제목 입력",
+      "taskDescription": "태스크 설명",
+      "taskDescriptionPlaceholder": "태스크 요구사항과 세부사항 설명",
+      "coverImage": "커버 이미지",
+      "coverImagePlaceholder": "이미지 URL 입력 (선택사항)",
+      "bountyAmount": "바운티 금액",
+      "bountyAmountPlaceholder": "바운티 금액 입력",
+      "taskStatus": "태스크 상태",
+      "save": "변경 사항 저장",
+      "cancel": "취소",
+      "uploadImage": "이미지 업로드",
+      "orSeparator": "또는",
+      "publishDateLabel": "게시 날짜",
+      "publishDateHint": "게시 날짜를 변경하면 목록에서의 표시 순서에 영향을 줍니다",
+      "participantsStatsLabel": "참여자 통계",
+      "initialParticipantsEditableLabel": "초기 참여자 수 (편집 가능)",
+      "actualSubmissionsLabel": "실제 제출 수 (자동 집계)",
+      "displayTotalLabel": "표시 총계 (자동 계산)",
+      "displayTotalHint": "표시 총계 = 초기 참여자 수 + 실제 제출 수. 초기 참여자 수만 수동으로 편집할 수 있습니다.",
+      "winnerUrlLabel": "수상 프로젝트 URL",
+      "winnerUrlPlaceholder": "수상 프로젝트의 URL 입력",
+      "winnerUrlHint": "수상 프로젝트 URL을 설정하면 태스크 상태가 자동으로 Closed로 변경됩니다"
+    },
+    "confirmDelete": "이 태스크를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
+    "confirmBatch": "{{count}}개 태스크의 상태를 \"{{status}}\"로 업데이트하시겠습니까?",
+    "messages": {
+      "loginRequired": "로그인이 필요합니다",
+      "adminRequired": "관리자 권한이 필요합니다",
+      "createSuccess": "태스크 생성에 성공했습니다!",
+      "updateSuccess": "태스크 업데이트에 성공했습니다!",
+      "deleteSuccess": "태스크 삭제에 성공했습니다!",
+      "reviewSuccess": "심사 결과가 업데이트되었습니다!",
+      "batchComplete": "일괄 업데이트가 완료되었습니다!",
+      "createFailed": "생성에 실패했습니다:",
+      "updateFailed": "업데이트에 실패했습니다:",
+      "deleteFailed": "삭제에 실패했습니다:",
+      "batchFailed": "일괄 업데이트에 실패했습니다",
+      "fillComplete": "완전한 태스크 정보를 입력해 주세요",
+      "alreadySubmitted": "이미 이 태스크를 제출했습니다",
+      "submitSuccess": "제출에 성공했습니다!",
+      "submitFailed": "제출에 실패했습니다:",
+      "commentFailed": "댓글 작성에 실패했습니다:",
+      "tryAgain": "나중에 다시 시도해 주세요",
+      "networkError": "네트워크 오류. 나중에 다시 시도해주세요",
+      "resubmitSuccess": "재제출에 성공했습니다! 새 프로젝트가 업데이트되었습니다",
+      "selectImageFile": "이미지 파일을 선택해주세요",
+      "imageTooLarge": "이미지 크기는 5MB를 초과할 수 없습니다",
+      "imageUploadFailedCreate": "이미지 업로드에 실패했습니다. 태스크 생성을 계속하시겠습니까?\n\n\"확인\"을 클릭하여 이미지 없이 계속\n\"취소\"를 클릭하여 다시 시도",
+      "imageUploadFailedEdit": "이미지 업로드에 실패했습니다. 다른 변경사항을 저장하시겠습니까?\n\n\"확인\"을 클릭하여 이미지 없이 계속\n\"취소\"를 클릭하여 다시 시도",
+      "imageUploadFailedNote": "\n참고: 이미지 업로드에 실패하여 커버 이미지 없이 태스크가 생성되었습니다.",
+      "taskUpdated": "태스크가 성공적으로 업데이트되었습니다!",
+      "taskUpdatedImageFailed": "\n참고: 이미지 업로드에 실패했지만 다른 정보는 저장되었습니다.",
+      "updateFailedPrefix": "업데이트 실패: ",
+      "updateFailedRetry": "업데이트에 실패했습니다. 나중에 다시 시도해주세요",
+      "deleteFailedPrefix": "삭제 실패: ",
+      "deleteFailedRetry": "삭제에 실패했습니다. 나중에 다시 시도해주세요",
+      "submissionUrlUpdated": "제출 링크가 업데이트되었습니다!",
+      "submissionDeleted": "제출 기록이 삭제되었습니다!",
+      "reviewResultUpdated": "심사 결과가 업데이트되었습니다!",
+      "reviewNotesUpdated": "Review Notes가 업데이트되었습니다!",
+      "confirmDeleteSubmission": "이 제출물을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+    },
+    "countdown": {
+      "setTimeRequired": "시작 시간과 종료 시간을 설정해주세요",
+      "endTimeAfterStart": "종료 시간은 시작 시간보다 이후여야 합니다",
+      "settingsUpdated": "카운트다운 설정이 업데이트되었습니다",
+      "saveFailed": "저장에 실패했습니다",
+      "eventNamePlaceholder": "이벤트 이름을 입력하세요",
+      "managementTitle": "카운트다운 관리",
+      "loading": "로딩 중...",
+      "eventNameLabel": "이벤트 이름",
+      "startTimeLabel": "시작 시간 (UTC)",
+      "endTimeLabel": "종료 시간 (UTC)",
+      "timezoneTitle": "시간대 안내:",
+      "timezoneNote1": "모든 시간은 UTC-0 시간대를 사용합니다",
+      "timezoneNote2": "카운트다운은 Mission Guidelines 위에 표시됩니다",
+      "timezoneNote3": "카운트다운 종료 후 자동으로 숨겨집니다",
+      "saving": "저장 중...",
+      "saveButton": "설정 저장"
+    },
+    "users": {
+      "fetchFailed": "사용자 목록을 가져오지 못했습니다",
+      "operationSuccess": "작업 성공",
+      "operationFailed": "작업 실패",
+      "refreshing": "새로고침 중...",
+      "refresh": "새로고침",
+      "title": "사용자 블랙리스트 관리",
+      "searchPlaceholder": "사용자명 또는 사용자 ID 검색...",
+      "allUsersFilter": "모든 사용자",
+      "blacklistedFilter": "블랙리스트 사용자",
+      "normalFilter": "일반 사용자",
+      "clearFilters": "모든 필터 초기화",
+      "loadingList": "사용자 목록 로딩 중...",
+      "emptyNoUsers": "사용자 데이터가 없습니다",
+      "emptyNoMatch": "일치하는 사용자를 찾을 수 없습니다",
+      "emptyHintNoUsers": "시스템에 사용자 프로필이 없습니다",
+      "emptyHintNoMatch": "검색 조건이나 필터를 조정해보세요",
+      "columnUser": "사용자",
+      "columnSubmissions": "제출 수",
+      "columnAwards": "수상 수",
+      "columnLastSubmission": "마지막 제출 시간",
+      "columnStatus": "상태",
+      "columnActions": "작업",
+      "neverSubmitted": "제출 기록 없음",
+      "blacklistedStatus": "블랙리스트됨",
+      "normalStatus": "정상",
+      "processing": "처리 중...",
+      "unblacklistAction": "블랙리스트 해제",
+      "blacklistAction": "블랙리스트에 추가",
+      "totalUsers": "총 {{count}}명의 사용자 | {{shown}}개의 결과 표시",
+      "paginationInfo": "전체 {{total}}개 중 {{from}} - {{to}} 표시"
+    }
+  },
+  "common": {
+    "confirm": "확인",
+    "cancel": "취소",
+    "save": "저장",
+    "edit": "편집",
+    "delete": "삭제",
+    "submit": "제출",
+    "close": "닫기"
+  },
+  "profile": {
+    "title": "프로필 센터",
+    "fields": {
+      "discordId": "Discord ID",
+      "paypalEmail": "PayPal 이메일",
+      "ageRange": "연령대",
+      "profession": "직업",
+      "bio": "자기소개"
+    },
+    "placeholders": {
+      "discordId": "Discord 사용자명#태그를 입력하세요",
+      "paypalEmail": "PayPal 이메일 주소를 입력하세요",
+      "ageRange": "연령대를 선택하세요",
+      "profession": "직업을 입력하세요",
+      "bio": "자신에 대해 소개해주세요..."
+    },
+    "ageRanges": {
+      "under_18": "18세 미만",
+      "18_25": "18-25세",
+      "26_35": "26-35세",
+      "36_45": "36-45세",
+      "46_55": "46-55세",
+      "over_55": "55세 이상"
+    },
+    "hints": {
+      "discordId": "연락 및 수상 알림용, 형식: 사용자명#1234",
+      "paypalEmail": "보상 수령용, 정확한 이메일인지 확인해주세요",
+      "bio": "기술과 경험을 간략히 소개, 최대 200자"
+    },
+    "save": "프로필 저장",
+    "saving": "저장 중...",
+    "messages": {
+      "saveSuccess": "프로필이 성공적으로 저장되었습니다!",
+      "saveError": "저장에 실패했습니다. 다시 시도해주세요"
+    }
+  },
+  "notifications": {
+    "title": "알림",
+    "unreadCount": "{{count}}개 읽지 않음",
+    "empty": {
+      "title": "메시지 없음",
+      "description": "작품이 수상할 때 알림을 받게 됩니다"
+    },
+    "types": {
+      "award": "수상 알림",
+      "system": "시스템 알림",
+      "task_update": "태스크 업데이트"
+    },
+    "relatedTask": "관련 태스크: {{title}}",
+    "unread": "읽지 않음",
+    "timeAgo": {
+      "justNow": "방금 전",
+      "hoursAgo": "{{count}}시간 전",
+      "daysAgo": "{{count}}일 전"
+    },
+    "awardTitle": "🎉 축하합니다!",
+    "awardMessage": "태스크 {{taskTitle}}에 대한 제출이 수상되었습니다!"
+  },
+  "tabs": {
+    "profile": "프로필",
+    "notifications": "알림"
+  }
+}

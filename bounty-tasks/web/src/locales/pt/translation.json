@@ -1,0 +1,407 @@
+{
+  "app": {
+    "title": "Plataforma de Missões de Recompensa",
+    "loading": "Carregando..."
+  },
+  "nav": {
+    "tasks": "Exibir Tarefas",
+    "submissions": "Minhas Submissões",
+    "profile": "Perfil",
+    "admin": "Centro Administrativo"
+  },
+  "user": {
+    "admin": "Administrador",
+    "user": "Usuário"
+  },
+  "introduction": {
+    "title": "Mecânica de Missões de Recompensa",
+    "subtitle": "Participe em missões de recompensa, mostre suas habilidades e ganhe recompensas generosas!",
+    "steps": {
+      "select": {
+        "title": "Selecionar Missões",
+        "description": "Navegue pelas missões de recompensa disponíveis e escolha projetos que se adequem às suas habilidades"
+      },
+      "submit": {
+        "title": "Enviar Trabalho",
+        "description": "Faça login na sua conta e envie o link do projeto antes de terça-feira ao meio-dia 12:00 UTC-0 para a tarefa da semana passada"
+      },
+      "evaluate": {
+        "title": "Avaliação e Prêmios",
+        "description": "O administrador revisa e avalia, atualiza o progresso da tarefa da semana passada na quarta-feira ao meio-dia 12:00 UTC-0"
+      },
+      "reward": {
+        "title": "Obter Recompensas",
+        "description": "Os vencedores receberão as recompensas correspondentes, por favor complete as informações do perfil pessoal"
+      }
+    },
+    "rules": {
+      "title": "Diretrizes da Missão",
+      "items": [
+        "Status da Missão: Open (aceitando submissões), Pending (em revisão), Closed (finalizado)",
+        "Requisitos da Missão: 1) As descrições das missões de recompensa são apenas para inspiração—sinta-se livre para criar e se expressar; quanto mais atrativo, melhor. 2) Os projetos devem ser completamente funcionais com uma UI polida e uma versão em inglês (suporte multilíngue é preferível). Demos não são aceitas. 3) Todos os projetos devem ser trabalhos originais. Remix ou plágio é estritamente proibido.",
+        "Como Ver Projetos Vencedores: Verifique o status da sua missão enviada através de \"Minha Submissão\", ou navegue para missões \"Fechadas\" e clique em \"Ver Projeto Vencedor\".",
+        "Submissão de Missão: Uma submissão por missão, com edição permitida (vá para \"Minha Submissão\" → \"Editar\").",
+        "Lembrete de Recompensa: Atualize suas informações pessoais com precisão no módulo \"Perfil\" para garantir a entrega da recompensa dentro de uma semana após ganhar. A plataforma não será responsável por erros de pagamento devido a informações incorretas."
+      ]
+    }
+  },
+  "foundingCreatorBadge": {
+    "label": "Criador Fundador",
+    "ariaLabel": "Visitar o perfil do Criador Fundador"
+  },
+  "tasks": {
+    "sort": "Ordenar:",
+    "sortOptions": {
+      "created_at": "Hora da Publicação",
+      "reward_amount": "Valor da Recompensa"
+    },
+    "status": "Status:",
+    "statusOptions": {
+      "all": "Todos",
+      "Open": "Aberto",
+      "Pending": "Pendente",
+      "Closed": "Fechado"
+    },
+    "statusLabels": {
+      "Open": "Aberto",
+      "Pending": "Pendente",
+      "Closed": "Fechado"
+    },
+    "date": "Data de Publicação:",
+    "startDate": "Data de Início:",
+    "endDate": "Data de Fim:",
+    "noAvailableDates": "Nenhuma data disponível",
+    "loading": "Carregando tarefas...",
+    "pagination": "Página {{current}}/{{total}}",
+    "completed": "Completado",
+    "viewWinnerProject": "Ver Projeto Vencedor",
+    "participants": "participantes",
+    "submitTask": "Enviar Tarefa",
+    "cannotSubmit": "Não Pode Enviar",
+    "comment": "Comentário",
+    "noTasks": "Nenhuma tarefa correspondente disponível",
+    "submitDialog": {
+      "title": "Enviar Tarefa: {{title}}",
+      "projectUrl": "URL do Projeto *",
+      "placeholder": "https://your-project-url.com",
+      "note": "Por favor forneça uma URL de projeto válida e certifique-se de que o link seja acessível",
+      "socialMediaUrl": "URL de Compartilhamento em Redes Sociais *",
+      "socialMediaPlaceholder": "Link de qualquer plataforma de redes sociais",
+      "socialMediaNote": "Por favor forneça um link válido de compartilhamento em redes sociais para seu projeto. Apenas usuários que compartilharem em redes sociais serão elegíveis para seleção de vencedores.",
+      "submit": "Confirmar Envio",
+      "submitting": "Enviando...",
+      "cancel": "Cancelar",
+      "invalidUrl": "Por favor insira uma URL https:// válida",
+      "invalidSocialUrl": "Por favor forneça um link válido de redes sociais (suporta qualquer plataforma de redes sociais)"
+    },
+    "comments": {
+      "title": "Comentários da Tarefa",
+      "placeholder": "Escreva seu comentário...",
+      "send": "Enviar",
+      "noComments": "Ainda não há comentários, seja o primeiro a comentar!",
+      "anonymous": "Usuário Anônimo",
+      "viewAll": "Ver Todos os Comentários ({{count}})",
+      "reply": "Responder",
+      "allComments": "Todos os Comentários ({{count}})",
+      "replyingTo": "Respondendo a {{name}}",
+      "cancelReply": "Cancelar Resposta"
+    }
+  },
+  "submissions": {
+    "totalSubmissions": "Total de Submissões",
+    "awards": "Prêmios Ganhos",
+    "pending": "Revisão Pendente",
+    "statusLabels": {
+      "submitted": "Enviado",
+      "not_awarded": "Não Premiado",
+      "awarded": "Premiado"
+    },
+    "bounty": "Recompensa: ${{amount}}",
+    "submitTime": "Hora do Envio: {{time}}",
+    "viewProject": "Ver Projeto",
+    "reviewNotes": "Notas da Revisão:",
+    "awardedWork": "🎉 Trabalho Premiado",
+    "noSubmissions": "Sem registros de submissão",
+    "noSubmissionsDesc": "Vá para a página de exibir missões para participar em missões de recompensa!"
+  },
+  "admin": {
+    "operations": "Operações Administrativas",
+    "publishTask": "Publicar Nova Tarefa",
+    "filters": "Filtrar por:",
+    "statusFilter": "Todos os Status",
+    "dateFilter": {
+      "all": "Todo o Tempo",
+      "today": "Hoje",
+      "week": "Esta Semana",
+      "month": "Este Mês"
+    },
+    "tabs": {
+      "users": "Gestão de Usuários",
+      "countdown": "Configurações de Contagem Regressiva",
+      "emptyTitle": "Sem tarefas {{status}}",
+      "emptyOpen": "Nenhuma tarefa aberta no momento. Clique no botão acima para criar uma nova tarefa.",
+      "emptyPending": "Nenhuma tarefa em revisão no momento.",
+      "emptyClosed": "Nenhuma tarefa encerrada."
+    },
+    "batchOperations": {
+      "open": "Abrir em Lote",
+      "crowd": "Pausar em Lote",
+      "close": "Fechar em Lote",
+      "selectAll": "Selecionar Todos",
+      "unselectAll": "Desmarcar Todos",
+      "selectedTasks": "Selecionadas {{selected}} / {{total}} tarefas",
+      "selectedSubmissions": "Selecionadas {{selected}} / {{total}} submissões",
+      "batchOpen": "Abrir em Lote",
+      "batchPending": "Revisar em Lote",
+      "batchClose": "Fechar em Lote",
+      "batchAward": "Premiar em Lote",
+      "batchNotAward": "Não Premiar em Lote",
+      "onlySingleHint": "(apenas seleção única)",
+      "onlyOneAwardedTitle": "Apenas uma submissão por tarefa pode ser premiada",
+      "onlyOneAwarded": "Apenas uma submissão por tarefa pode ser premiada. Selecione uma única submissão.",
+      "confirmBatchStatus": "Tem certeza de que deseja alterar o status de {{count}} tarefas selecionadas para {{status}}?",
+      "confirmBatchStatusSubmissions": "Tem certeza de que deseja definir {{count}} submissões selecionadas para o status {{status}}?",
+      "batchSuccess": "{{count}} tarefas atualizadas com sucesso",
+      "batchSubmissionSuccess": "{{count}} submissões definidas para o status {{status}}",
+      "batchFailed": "Operação em lote falhou: ",
+      "batchFailedGeneric": "Operação em lote falhou, tente novamente mais tarde",
+      "batchUpdateFailedGeneric": "Atualização em lote falhou, tente novamente mais tarde",
+      "noTasksSelected": "Selecione tarefas para operação em lote primeiro",
+      "noSubmissionsSelected": "Selecione submissões para operação em lote primeiro",
+      "statusAwarded": "Premiado",
+      "statusNotAwarded": "Não Premiado"
+    },
+    "taskCard": {
+      "viewSubmissions": "Ver Submissões",
+      "edit": "Editar Tarefa",
+      "delete": "Excluir Tarefa",
+      "participants": "{{count}} participantes",
+      "winnerLink": "Link do Projeto Vencedor"
+    },
+    "submissions": {
+      "title": "Gestão de Submissões de Tarefas",
+      "noSubmissions": "Sem submissões",
+      "award": "Definir como Premiado",
+      "notAward": "Definir como Não Premiado",
+      "viewLink": "Ver Link do Projeto",
+      "notes": "Notas:",
+      "noNotes": "Sem notas de revisão",
+      "notesPlaceholder": "Digite as notas de revisão...",
+      "editNotes": "Editar Review Notes",
+      "projectLinkLabel": "Link do Projeto:",
+      "editUrlPlaceholder": "Digite o novo link do projeto",
+      "saveEdit": "Salvar",
+      "cancelEdit": "Cancelar",
+      "deleteSubmission": "Excluir Submissão"
+    },
+    "createTask": {
+      "title": "Publicar Nova Tarefa",
+      "taskTitle": "Título da Tarefa *",
+      "taskDescription": "Descrição da Tarefa *",
+      "coverImage": "URL da Imagem de Capa",
+      "bountyAmount": "Valor da Recompensa *",
+      "publish": "Publicar Tarefa",
+      "cancel": "Cancelar",
+      "titlePlaceholder": "Digite o título da tarefa",
+      "descriptionPlaceholder": "Descreva os requisitos e conteúdo da tarefa em detalhes",
+      "uploadImage": "Enviar Imagem",
+      "orSeparator": "ou",
+      "imageUrlPlaceholder": "Ou digite a URL da imagem",
+      "bountyPlaceholder": "Digite o valor da recompensa",
+      "publishDateLabel": "Data de Publicação",
+      "publishDateHint": "Se não definido, o horário atual será usado como horário de publicação",
+      "initialParticipantsLabel": "Participantes Iniciais",
+      "initialParticipantsPlaceholder": "Definir número inicial de participantes (opcional)",
+      "initialParticipantsHint": "Define o número inicial de participantes da tarefa, atualizado automaticamente com base nas submissões reais",
+      "winnerUrlLabel": "URL do Projeto Vencedor",
+      "winnerUrlPlaceholder": "Digite a URL do projeto vencedor (opcional)",
+      "winnerUrlHint": "Após definir a URL do projeto vencedor, o status da tarefa mudará automaticamente para Closed"
+    },
+    "editTask": {
+      "title": "Editar Tarefa",
+      "taskTitle": "Título da Tarefa",
+      "taskTitlePlaceholder": "Digite o título da tarefa",
+      "taskDescription": "Descrição da Tarefa",
+      "taskDescriptionPlaceholder": "Descreva os requisitos e detalhes da tarefa",
+      "coverImage": "Imagem de Capa",
+      "coverImagePlaceholder": "Digite a URL da imagem (opcional)",
+      "bountyAmount": "Valor da Recompensa",
+      "bountyAmountPlaceholder": "Digite o valor da recompensa",
+      "taskStatus": "Status da Tarefa",
+      "save": "Salvar Alterações",
+      "cancel": "Cancelar",
+      "uploadImage": "Enviar Imagem",
+      "orSeparator": "ou",
+      "publishDateLabel": "Data de Publicação",
+      "publishDateHint": "Alterar a data de publicação afetará a ordem de exibição na lista",
+      "participantsStatsLabel": "Estatísticas de Participantes",
+      "initialParticipantsEditableLabel": "Participantes Iniciais (editável)",
+      "actualSubmissionsLabel": "Submissões Reais (contagem automática)",
+      "displayTotalLabel": "Total Exibido (cálculo automático)",
+      "displayTotalHint": "Total Exibido = Participantes Iniciais + Submissões Reais. Apenas Participantes Iniciais é editável manualmente.",
+      "winnerUrlLabel": "URL do Projeto Vencedor",
+      "winnerUrlPlaceholder": "Digite a URL do projeto vencedor",
+      "winnerUrlHint": "Após definir a URL do projeto vencedor, o status da tarefa mudará automaticamente para Closed"
+    },
+    "confirmDelete": "Tem certeza de que deseja excluir esta tarefa? Esta operação não pode ser desfeita.",
+    "confirmBatch": "Tem certeza de que deseja atualizar {{count}} tarefas para o status \"{{status}}\"?",
+    "messages": {
+      "loginRequired": "Login necessário",
+      "adminRequired": "Permissão de administrador necessária",
+      "createSuccess": "Tarefa criada com sucesso!",
+      "updateSuccess": "Tarefa atualizada com sucesso!",
+      "deleteSuccess": "Tarefa excluída com sucesso!",
+      "reviewSuccess": "Resultado da revisão atualizado!",
+      "batchComplete": "Atualização em lote concluída!",
+      "createFailed": "Falha na criação:",
+      "updateFailed": "Falha na atualização:",
+      "deleteFailed": "Falha na exclusão:",
+      "batchFailed": "Falha na atualização em lote",
+      "fillComplete": "Por favor preencha as informações completas da tarefa",
+      "alreadySubmitted": "Você já enviou esta tarefa",
+      "submitSuccess": "Envio bem-sucedido!",
+      "submitFailed": "Falha no envio:",
+      "commentFailed": "Falha no comentário:",
+      "tryAgain": "Por favor tente novamente mais tarde",
+      "networkError": "Erro de rede, tente novamente mais tarde",
+      "resubmitSuccess": "Reenvio bem-sucedido! Seu novo projeto foi atualizado",
+      "selectImageFile": "Por favor selecione um arquivo de imagem",
+      "imageTooLarge": "O tamanho da imagem não pode exceder 5MB",
+      "imageUploadFailedCreate": "Falha no upload da imagem. Continuar criando a tarefa?\n\nClique em \"OK\" para continuar sem imagem\nClique em \"Cancelar\" para tentar novamente",
+      "imageUploadFailedEdit": "Falha no upload da imagem. Continuar salvando as outras alterações?\n\nClique em \"OK\" para continuar sem imagem\nClique em \"Cancelar\" para tentar novamente",
+      "imageUploadFailedNote": "\nNota: O upload da imagem falhou, a tarefa foi criada sem imagem de capa.",
+      "taskUpdated": "Tarefa atualizada com sucesso!",
+      "taskUpdatedImageFailed": "\nNota: O upload da imagem falhou, mas as outras informações foram salvas.",
+      "updateFailedPrefix": "Falha na atualização: ",
+      "updateFailedRetry": "Falha na atualização, tente novamente mais tarde",
+      "deleteFailedPrefix": "Falha na exclusão: ",
+      "deleteFailedRetry": "Falha na exclusão, tente novamente mais tarde",
+      "submissionUrlUpdated": "Link de submissão atualizado!",
+      "submissionDeleted": "Registro de submissão excluído!",
+      "reviewResultUpdated": "Resultado da revisão atualizado!",
+      "reviewNotesUpdated": "Review Notes atualizado!",
+      "confirmDeleteSubmission": "Tem certeza de que deseja excluir esta submissão? Esta ação não pode ser desfeita."
+    },
+    "countdown": {
+      "setTimeRequired": "Por favor defina o horário de início e fim",
+      "endTimeAfterStart": "O horário de término deve ser posterior ao horário de início",
+      "settingsUpdated": "Configurações de contagem regressiva atualizadas",
+      "saveFailed": "Falha ao salvar",
+      "eventNamePlaceholder": "Digite o nome do evento",
+      "managementTitle": "Gestão de Contagem Regressiva",
+      "loading": "Carregando...",
+      "eventNameLabel": "Nome do Evento",
+      "startTimeLabel": "Horário de Início (UTC)",
+      "endTimeLabel": "Horário de Término (UTC)",
+      "timezoneTitle": "Notas sobre Fuso Horário:",
+      "timezoneNote1": "Todos os horários usam o fuso horário UTC-0",
+      "timezoneNote2": "A contagem regressiva é exibida acima das Mission Guidelines",
+      "timezoneNote3": "Ocultada automaticamente após o término da contagem",
+      "saving": "Salvando...",
+      "saveButton": "Salvar Configurações"
+    },
+    "users": {
+      "fetchFailed": "Falha ao buscar lista de usuários",
+      "operationSuccess": "Operação bem-sucedida",
+      "operationFailed": "Operação falhou",
+      "refreshing": "Atualizando...",
+      "refresh": "Atualizar",
+      "title": "Gestão de Lista Negra de Usuários",
+      "searchPlaceholder": "Buscar nome de usuário ou ID de usuário...",
+      "allUsersFilter": "Todos os Usuários",
+      "blacklistedFilter": "Usuários na Lista Negra",
+      "normalFilter": "Usuários Normais",
+      "clearFilters": "Limpar todos os filtros",
+      "loadingList": "Carregando lista de usuários...",
+      "emptyNoUsers": "Sem dados de usuários",
+      "emptyNoMatch": "Nenhum usuário correspondente encontrado",
+      "emptyHintNoUsers": "O sistema atualmente não possui perfis de usuário",
+      "emptyHintNoMatch": "Tente ajustar sua busca ou filtro",
+      "columnUser": "Usuário",
+      "columnSubmissions": "Submissões",
+      "columnAwards": "Prêmios",
+      "columnLastSubmission": "Última Submissão",
+      "columnStatus": "Status",
+      "columnActions": "Ações",
+      "neverSubmitted": "Nunca enviou",
+      "blacklistedStatus": "Na Lista Negra",
+      "normalStatus": "Normal",
+      "processing": "Processando...",
+      "unblacklistAction": "Remover da Lista Negra",
+      "blacklistAction": "Adicionar à Lista Negra",
+      "totalUsers": "{{count}} usuários no total | Mostrando {{shown}} resultados",
+      "paginationInfo": "Mostrando {{from}} - {{to}} de {{total}}"
+    }
+  },
+  "common": {
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "submit": "Enviar",
+    "close": "Fechar"
+  },
+  "profile": {
+    "title": "Centro de Perfil",
+    "fields": {
+      "discordId": "ID do Discord",
+      "paypalEmail": "Email do PayPal",
+      "ageRange": "Faixa Etária",
+      "profession": "Profissão",
+      "bio": "Biografia"
+    },
+    "placeholders": {
+      "discordId": "Digite seu nome de usuário#tag do Discord",
+      "paypalEmail": "Digite seu endereço de email do PayPal",
+      "ageRange": "Selecione a faixa etária",
+      "profession": "Digite sua profissão",
+      "bio": "Conte-nos sobre você..."
+    },
+    "ageRanges": {
+      "under_18": "Menor de 18",
+      "18_25": "18-25 anos",
+      "26_35": "26-35 anos",
+      "36_45": "36-45 anos",
+      "46_55": "46-55 anos",
+      "over_55": "Acima de 55"
+    },
+    "hints": {
+      "discordId": "Para contato e notificações de prêmios, formato: nome#1234",
+      "paypalEmail": "Para receber recompensas, certifique-se de que o email esteja correto",
+      "bio": "Apresente brevemente suas habilidades e experiência, máximo 200 caracteres"
+    },
+    "save": "Salvar Perfil",
+    "saving": "Salvando...",
+    "messages": {
+      "saveSuccess": "Perfil salvo com sucesso!",
+      "saveError": "Falha ao salvar, por favor tente novamente"
+    }
+  },
+  "notifications": {
+    "title": "Notificações",
+    "unreadCount": "{{count}} não lidas",
+    "empty": {
+      "title": "Sem mensagens",
+      "description": "Você receberá notificações quando seus trabalhos ganharem prêmios"
+    },
+    "types": {
+      "award": "Notificação de Prêmio",
+      "system": "Notificação do Sistema",
+      "task_update": "Atualização de Tarefa"
+    },
+    "relatedTask": "Tarefa relacionada: {{title}}",
+    "unread": "Não lida",
+    "timeAgo": {
+      "justNow": "Agora mesmo",
+      "hoursAgo": "{{count}} horas atrás",
+      "daysAgo": "{{count}} dias atrás"
+    },
+    "awardTitle": "🎉 Parabéns!",
+    "awardMessage": "Sua submissão para a tarefa {{taskTitle}} ganhou um prêmio!"
+  },
+  "tabs": {
+    "profile": "Perfil",
+    "notifications": "Notificações"
+  }
+}
