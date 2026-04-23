@@ -1,0 +1,431 @@
+{
+  "app": {
+    "title": "賞金ミッションプラットフォーム",
+    "loading": "読み込み中..."
+  },
+  "nav": {
+    "tasks": "タスク表示",
+    "submissions": "投稿したタスク",
+    "profile": "プロフィール",
+    "admin": "管理センター"
+  },
+  "user": {
+    "admin": "管理者",
+    "user": "ユーザー"
+  },
+  "introduction": {
+    "title": "賞金ミッションゲームプレイ",
+    "subtitle": "賞金ミッションに参加し、スキルを披露して豊富な報酬を獲得しましょう！",
+    "steps": {
+      "select": {
+        "title": "ミッションを選択",
+        "description": "利用可能な賞金ミッションを閲覧し、スキルに適したプロジェクトを選択"
+      },
+      "submit": {
+        "title": "作品を提出",
+        "description": "アカウントにログインし、火曜日正午12:00（UTC-0時刻）までに先週のタスクのプロジェクトリンクを提出"
+      },
+      "evaluate": {
+        "title": "評価・受賞",
+        "description": "管理者が審査・評価し、水曜日正午12:00（UTC-0時刻）に先週のタスク進捗を更新"
+      },
+      "reward": {
+        "title": "報酬を獲得",
+        "description": "受賞者は対応する賞金を受け取ります。個人ページ情報の記入を必ず完了してください"
+      }
+    },
+    "rules": {
+      "title": "ミッションガイドライン",
+      "items": [
+        "ミッションステータス：Open（投稿受付中）、Pending（審査中）、Closed（終了）",
+        "ミッション要件：1）賞金ミッションの説明はインスピレーションのみ—自由に創作し表現してください；魅力的であるほど良いです。2）プロジェクトは完全に機能し、洗練されたUIと英語版を備える必要があります（多言語サポートが望ましい）。デモは受け付けません。3）すべてのプロジェクトはオリジナル作品である必要があります。リミックスや盗用は厳禁です。",
+        "受賞プロジェクトの表示方法：「私の提出」から提出済みミッションのステータスを確認、または「終了」ミッションに移動し「受賞プロジェクトを見る」をクリック。",
+        "ミッション提出：1ミッションにつき1回の提出、編集可能（「私の提出」→「編集」へ）。",
+        "報酬リマインダー：「プロフィール」モジュールで個人情報を正確に更新し、受賞後1週間以内の報酬配布を確実にしてください。不正確な情報による支払いエラーについてプラットフォームは責任を負いません。"
+      ]
+    }
+  },
+  "foundingCreatorBadge": {
+    "label": "創設クリエイター",
+    "ariaLabel": "創設クリエイターのプロフィールを見る"
+  },
+  "tasks": {
+    "sort": "並び順：",
+    "sortOptions": {
+      "created_at": "公開日時",
+      "reward_amount": "賞金額"
+    },
+    "status": "ステータス：",
+    "statusOptions": {
+      "all": "全て",
+      "Open": "公開中",
+      "Pending": "保留中",
+      "Closed": "終了"
+    },
+    "statusLabels": {
+      "Open": "公開中",
+      "Pending": "保留中",
+      "Closed": "終了"
+    },
+    "date": "公開日：",
+    "startDate": "開始日：",
+    "endDate": "終了日：",
+    "noAvailableDates": "利用可能な日付がありません",
+    "loading": "タスク読み込み中...",
+    "pagination": "{{current}}/{{total}}ページ",
+    "completed": "完了",
+    "viewWinnerProject": "受賞プロジェクトを見る",
+    "participants": "人参加",
+    "submitTask": "ミッションを提出",
+    "cannotSubmit": "提出不可",
+    "comment": "コメント",
+    "noTasks": "該当するタスクがありません",
+    "submitDialog": {
+      "title": "ミッションを提出：{{title}}",
+      "projectUrl": "プロジェクトURL *",
+      "placeholder": "https://your-project-url.com",
+      "note": "有効なプロジェクトURLを提供し、リンクがアクセス可能であることを確認してください",
+      "socialMediaUrl": "ソーシャルメディア共有URL *",
+      "socialMediaPlaceholder": "任意のソーシャルメディアプラットフォームの共有リンク",
+      "socialMediaNote": "プロジェクトの有効なソーシャルメディア共有リンクを提供してください。ソーシャルメディアで共有したユーザーのみが受賞者選考の対象となります。",
+      "submit": "提出確認",
+      "submitting": "提出中...",
+      "cancel": "キャンセル",
+      "invalidUrl": "有効な https:// URLを入力してください",
+      "invalidSocialUrl": "有効なソーシャルメディア共有リンクを提供してください（任意のソーシャルメディアプラットフォームに対応）"
+    },
+    "comments": {
+      "title": "タスクコメント",
+      "placeholder": "コメントを書いてください...",
+      "send": "送信",
+      "noComments": "まだコメントがありません。最初にコメントしてください！",
+      "anonymous": "匿名ユーザー",
+      "viewAll": "すべてのコメントを表示（{{count}}件）",
+      "reply": "返信",
+      "allComments": "すべてのコメント（{{count}}件）",
+      "replyingTo": "{{name}}に返信",
+      "cancelReply": "返信をキャンセル",
+      "sendFailed": "コメントの送信に失敗しました"
+    }
+  },
+  "countdown": {
+    "title": "オープン賞金ミッション提出期限までのカウントダウン",
+    "days": "日",
+    "hours": "時間",
+    "minutes": "分",
+    "seconds": "秒",
+    "timezone": "すべて UTC-0 時間"
+  },
+  "maliciousSubmissionPolicy": {
+    "title": "悪意のある提出ポリシー",
+    "description": "スパム、詐欺の試み、不適切な材料、または意図的に有害なリンクを含むコンテンツを含むが、これらに限定されない悪意のある提出は、直ちに失格となります。悪意のあるコンテンツを提出したユーザーは、賞金ミッションからの永久アカウント停止に直面する可能性があります。"
+  },
+  "maliciousPolicy": {
+    "title": "悪意のある提出ポリシー",
+    "warning": "警告：悪意のある提出に関するポリシー",
+    "description": "悪意のある提出行為に関わっていることが判明したユーザーアカウントは、直接賞金タスクのブラックリストに追加されます。このような行為には以下が含まれますが、これらに限定されません：",
+    "behaviors": [
+      "タスクの核心テーマに合わない提出",
+      "単一の作品を複数のタスクに提出すること",
+      "間違ったまたは無関係なプロジェクトを繰り返し提出すること"
+    ],
+    "enforcement": "このポリシーは、賞金タスクエコシステムの公平性と効率性を確保するために実施されています。"
+  },
+  "submissions": {
+    "totalSubmissions": "総投稿数",
+    "awards": "受賞回数",
+    "pending": "審査待ち",
+    "statusLabels": {
+      "submitted": "提出済み",
+      "not_awarded": "受賞なし",
+      "awarded": "受賞"
+    },
+    "bounty": "賞金：${{amount}}",
+    "submitTime": "提出日時：{{time}}",
+    "viewProject": "プロジェクトを見る",
+    "reviewNotes": "審査コメント：",
+    "awardedWork": "🎉 受賞作品",
+    "noSubmissions": "投稿記録がありません",
+    "noSubmissionsDesc": "ミッション表示ページで賞金ミッションに参加しましょう！"
+  },
+  "admin": {
+    "operations": "管理操作",
+    "publishTask": "新しいタスクを公開",
+    "filters": "フィルター：",
+    "statusFilter": "全ステータス",
+    "dateFilter": {
+      "all": "全期間",
+      "today": "今日",
+      "week": "今週",
+      "month": "今月"
+    },
+    "tabs": {
+      "users": "ユーザー管理",
+      "countdown": "カウントダウン設定",
+      "emptyTitle": "{{status}}のタスクはありません",
+      "emptyOpen": "現在公開中のタスクはありません。上のボタンから新しいタスクを作成してください。",
+      "emptyPending": "現在審査中のタスクはありません。",
+      "emptyClosed": "終了したタスクはありません。"
+    },
+    "batchOperations": {
+      "open": "一括公開",
+      "crowd": "一括停止",
+      "close": "一括終了",
+      "selectAll": "すべて選択",
+      "unselectAll": "選択解除",
+      "selectedTasks": "{{selected}} / {{total}} 件のタスクを選択中",
+      "selectedSubmissions": "{{selected}} / {{total}} 件の投稿を選択中",
+      "batchOpen": "一括公開",
+      "batchPending": "一括審査",
+      "batchClose": "一括終了",
+      "batchAward": "一括受賞",
+      "batchNotAward": "一括受賞なし",
+      "onlySingleHint": "（単一選択のみ）",
+      "onlyOneAwardedTitle": "タスクごとに受賞できる投稿は1つだけです",
+      "onlyOneAwarded": "タスクごとに受賞できる投稿は1つだけです。1件ずつ選択してください。",
+      "confirmBatchStatus": "選択した {{count}} 件のタスクのステータスを {{status}} に変更してもよろしいですか？",
+      "confirmBatchStatusSubmissions": "選択した {{count}} 件の投稿を{{status}}ステータスに設定してもよろしいですか？",
+      "batchSuccess": "{{count}} 件のタスクを正常に更新しました",
+      "batchSubmissionSuccess": "{{count}} 件の投稿を{{status}}ステータスに設定しました",
+      "batchFailed": "一括操作に失敗しました：",
+      "batchFailedGeneric": "一括操作に失敗しました。後でもう一度お試しください",
+      "batchUpdateFailedGeneric": "一括更新に失敗しました。後でもう一度お試しください",
+      "noTasksSelected": "一括操作するタスクを先に選択してください",
+      "noSubmissionsSelected": "一括操作する投稿を先に選択してください",
+      "statusAwarded": "受賞",
+      "statusNotAwarded": "受賞なし"
+    },
+    "taskCard": {
+      "viewSubmissions": "投稿を見る",
+      "edit": "タスクを編集",
+      "delete": "タスクを削除",
+      "participants": "{{count}} 人参加",
+      "winnerLink": "受賞プロジェクトリンク"
+    },
+    "submissions": {
+      "title": "タスク投稿管理",
+      "noSubmissions": "投稿がありません",
+      "award": "受賞に設定",
+      "notAward": "受賞なしに設定",
+      "viewLink": "プロジェクトリンクを見る",
+      "notes": "備考：",
+      "noNotes": "審査コメントはありません",
+      "notesPlaceholder": "審査コメントを入力してください...",
+      "editNotes": "Review Notesを編集",
+      "projectLinkLabel": "プロジェクトリンク:",
+      "editUrlPlaceholder": "新しいプロジェクトリンクを入力",
+      "saveEdit": "保存",
+      "cancelEdit": "キャンセル",
+      "deleteSubmission": "投稿を削除"
+    },
+    "createTask": {
+      "title": "新しいタスクを公開",
+      "taskTitle": "タスクタイトル *",
+      "taskDescription": "タスク説明 *",
+      "coverImage": "カバー画像URL",
+      "bountyAmount": "賞金額 *",
+      "publish": "タスクを公開",
+      "cancel": "キャンセル",
+      "titlePlaceholder": "タスクタイトルを入力してください",
+      "descriptionPlaceholder": "タスクの要件と内容を詳しく説明してください",
+      "uploadImage": "画像をアップロード",
+      "orSeparator": "または",
+      "imageUrlPlaceholder": "または画像URLを入力",
+      "bountyPlaceholder": "賞金額を入力してください",
+      "publishDateLabel": "公開日",
+      "publishDateHint": "設定しない場合、現在時刻が公開時刻として使用されます",
+      "initialParticipantsLabel": "初期参加者数",
+      "initialParticipantsPlaceholder": "初期参加者数を設定（任意）",
+      "initialParticipantsHint": "タスクの初期参加者数を設定します。実際の投稿に基づいて自動的に更新されます",
+      "winnerUrlLabel": "受賞プロジェクトURL",
+      "winnerUrlPlaceholder": "受賞プロジェクトのURLを入力（任意）",
+      "winnerUrlHint": "受賞プロジェクトURLを設定すると、タスクステータスが自動的にClosedになります"
+    },
+    "editTask": {
+      "title": "タスクを編集",
+      "taskTitle": "タスクタイトル",
+      "taskTitlePlaceholder": "タスクタイトルを入力",
+      "taskDescription": "タスク説明",
+      "taskDescriptionPlaceholder": "タスクの要件と詳細を説明",
+      "coverImage": "カバー画像",
+      "coverImagePlaceholder": "画像URLを入力（オプション）",
+      "bountyAmount": "賞金額",
+      "bountyAmountPlaceholder": "賞金額を入力",
+      "taskStatus": "タスクステータス",
+      "save": "変更を保存",
+      "cancel": "キャンセル",
+      "uploadImage": "画像をアップロード",
+      "orSeparator": "または",
+      "publishDateLabel": "公開日",
+      "publishDateHint": "公開日を変更すると、リスト内の表示順序に影響します",
+      "participantsStatsLabel": "参加者統計",
+      "initialParticipantsEditableLabel": "初期参加者数（編集可能）",
+      "actualSubmissionsLabel": "実際の投稿数（自動集計）",
+      "displayTotalLabel": "表示総数（自動計算）",
+      "displayTotalHint": "表示総数 = 初期参加者数 + 実際の投稿数。初期参加者数のみ手動で変更できます。",
+      "winnerUrlLabel": "受賞プロジェクトURL",
+      "winnerUrlPlaceholder": "受賞プロジェクトのURLを入力",
+      "winnerUrlHint": "受賞プロジェクトURLを設定すると、タスクステータスが自動的にClosedになります"
+    },
+    "confirmDelete": "このタスクを削除してもよろしいですか？この操作は元に戻せません。",
+    "confirmBatch": "{{count}}個のタスクのステータスを「{{status}}」に更新してもよろしいですか？",
+    "messages": {
+      "loginRequired": "ログインが必要です",
+      "adminRequired": "管理者権限が必要です",
+      "createSuccess": "タスクの作成に成功しました！",
+      "updateSuccess": "タスクの更新に成功しました！",
+      "deleteSuccess": "タスクの削除に成功しました！",
+      "reviewSuccess": "審査結果が更新されました！",
+      "batchComplete": "一括更新が完了しました！",
+      "createFailed": "作成に失敗しました：",
+      "updateFailed": "更新に失敗しました：",
+      "deleteFailed": "削除に失敗しました：",
+      "batchFailed": "一括更新に失敗しました",
+      "fillComplete": "完全なタスク情報を入力してください",
+      "alreadySubmitted": "このタスクは既に提出済みです",
+      "submitSuccess": "提出に成功しました！",
+      "submitFailed": "提出に失敗しました：",
+      "commentFailed": "コメントに失敗しました：",
+      "tryAgain": "後でもう一度お試しください",
+      "networkError": "ネットワークエラー。後でもう一度お試しください",
+      "resubmitSuccess": "再提出に成功しました！新しいプロジェクトが更新されました",
+      "selectImageFile": "画像ファイルを選択してください",
+      "imageTooLarge": "画像サイズは5MB以下にしてください",
+      "imageUploadFailedCreate": "画像のアップロードに失敗しました。タスクの作成を続行しますか？\n\n「OK」をクリックして画像なしで続行\n「キャンセル」をクリックして再試行",
+      "imageUploadFailedEdit": "画像のアップロードに失敗しました。他の変更を保存しますか？\n\n「OK」をクリックして画像なしで続行\n「キャンセル」をクリックして再試行",
+      "imageUploadFailedNote": "\n注：画像のアップロードに失敗しましたが、タスクはカバー画像なしで作成されました。",
+      "taskUpdated": "タスクが正常に更新されました！",
+      "taskUpdatedImageFailed": "\n注：画像のアップロードに失敗しましたが、その他の情報は保存されました。",
+      "updateFailedPrefix": "更新に失敗しました：",
+      "updateFailedRetry": "更新に失敗しました。後でもう一度お試しください",
+      "deleteFailedPrefix": "削除に失敗しました：",
+      "deleteFailedRetry": "削除に失敗しました。後でもう一度お試しください",
+      "submissionUrlUpdated": "投稿リンクが更新されました！",
+      "submissionDeleted": "投稿記録を削除しました！",
+      "reviewResultUpdated": "審査結果が更新されました！",
+      "reviewNotesUpdated": "Review Notesが更新されました！",
+      "confirmDeleteSubmission": "この投稿を削除してもよろしいですか？この操作は元に戻せません。"
+    },
+    "countdown": {
+      "setTimeRequired": "開始時間と終了時間を設定してください",
+      "endTimeAfterStart": "終了時間は開始時間より後に設定してください",
+      "settingsUpdated": "カウントダウン設定が更新されました",
+      "saveFailed": "保存に失敗しました",
+      "eventNamePlaceholder": "イベント名を入力",
+      "managementTitle": "カウントダウン管理",
+      "loading": "読み込み中...",
+      "eventNameLabel": "イベント名",
+      "startTimeLabel": "開始時間 (UTC)",
+      "endTimeLabel": "終了時間 (UTC)",
+      "timezoneTitle": "タイムゾーンについて：",
+      "timezoneNote1": "すべての時刻はUTC-0タイムゾーンを使用します",
+      "timezoneNote2": "カウントダウンはMission Guidelinesの上に表示されます",
+      "timezoneNote3": "カウントダウン終了後は自動的に非表示になります",
+      "saving": "保存中...",
+      "saveButton": "設定を保存"
+    },
+    "users": {
+      "fetchFailed": "ユーザーリストの取得に失敗しました",
+      "operationSuccess": "操作に成功しました",
+      "operationFailed": "操作に失敗しました",
+      "refreshing": "更新中...",
+      "refresh": "更新",
+      "title": "ユーザーブラックリスト管理",
+      "searchPlaceholder": "ユーザー名またはユーザーIDで検索...",
+      "allUsersFilter": "すべてのユーザー",
+      "blacklistedFilter": "ブラックリストのユーザー",
+      "normalFilter": "通常ユーザー",
+      "clearFilters": "すべてのフィルターをクリア",
+      "loadingList": "ユーザーリストを読み込み中...",
+      "emptyNoUsers": "ユーザーデータがありません",
+      "emptyNoMatch": "一致するユーザーが見つかりません",
+      "emptyHintNoUsers": "システムにはユーザープロファイルがありません",
+      "emptyHintNoMatch": "検索条件やフィルターを調整してみてください",
+      "columnUser": "ユーザー",
+      "columnSubmissions": "投稿数",
+      "columnAwards": "受賞数",
+      "columnLastSubmission": "最終投稿時間",
+      "columnStatus": "ステータス",
+      "columnActions": "操作",
+      "neverSubmitted": "投稿なし",
+      "blacklistedStatus": "ブラックリスト",
+      "normalStatus": "通常",
+      "processing": "処理中...",
+      "unblacklistAction": "ブラックリスト解除",
+      "blacklistAction": "ブラックリストに追加",
+      "totalUsers": "合計 {{count}} ユーザー | {{shown}} 件の結果を表示",
+      "paginationInfo": "{{from}} - {{to}} / {{total}} 件を表示"
+    }
+  },
+  "common": {
+    "confirm": "確認",
+    "cancel": "キャンセル",
+    "save": "保存",
+    "edit": "編集",
+    "delete": "削除",
+    "submit": "提出",
+    "close": "閉じる"
+  },
+  "profile": {
+    "title": "プロフィールセンター",
+    "fields": {
+      "discordId": "Discord ID",
+      "paypalEmail": "PayPal メール",
+      "ageRange": "年齢層",
+      "profession": "職業",
+      "bio": "自己紹介"
+    },
+    "placeholders": {
+      "discordId": "Discord ユーザー名#タグを入力",
+      "paypalEmail": "PayPal メールアドレスを入力",
+      "ageRange": "年齢層を選択",
+      "profession": "職業を入力",
+      "bio": "自己紹介をしてください..."
+    },
+    "ageRanges": {
+      "under_18": "18歳未満",
+      "18_25": "18-25歳",
+      "26_35": "26-35歳",
+      "36_45": "36-45歳",
+      "46_55": "46-55歳",
+      "over_55": "55歳以上"
+    },
+    "hints": {
+      "discordId": "連絡と受賞通知用、形式：ユーザー名#1234",
+      "paypalEmail": "報酬受取用、正確なメールアドレスを確認してください",
+      "bio": "スキルと経験を簡潔に紹介、最大200文字"
+    },
+    "save": "プロフィールを保存",
+    "saving": "保存中...",
+    "messages": {
+      "saveSuccess": "プロフィールの保存に成功しました！",
+      "saveError": "保存に失敗しました。もう一度お試しください"
+    }
+  },
+  "notifications": {
+    "title": "通知",
+    "unreadCount": "{{count}}件未読",
+    "empty": {
+      "title": "メッセージなし",
+      "description": "作品が受賞した際に通知を受け取ります"
+    },
+    "types": {
+      "award": "受賞通知",
+      "system": "システム通知",
+      "task_update": "タスク更新"
+    },
+    "relatedTask": "関連タスク：{{title}}",
+    "unread": "未読",
+    "timeAgo": {
+      "justNow": "たった今",
+      "hoursAgo": "{{count}}時間前",
+      "daysAgo": "{{count}}日前"
+    },
+    "awardTitle": "🎉 おめでとうございます！",
+    "awardMessage": "タスク{{taskTitle}}への投稿が受賞しました！"
+  },
+  "tabs": {
+    "profile": "プロフィール",
+    "notifications": "通知"
+  }
+}

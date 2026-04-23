@@ -1,0 +1,469 @@
+{
+  "app": {
+    "title": "Bounty Mission Platform",
+    "loading": "Loading..."
+  },
+  "nav": {
+    "tasks": "Mission Display",
+    "submissions": "My Submissions",
+    "profile": "Profile",
+    "admin": "Admin Center"
+  },
+  "user": {
+    "admin": "Admin",
+    "user": "User"
+  },
+  "introduction": {
+    "title": "Bounty Mission Gameplay",
+    "subtitle": "Participate in bounty missions, showcase your skills, and win generous rewards!",
+    "steps": {
+      "select": {
+        "title": "Select Missions",
+        "description": "Browse available bounty missions and choose projects that suit your skills"
+      },
+      "submit": {
+        "title": "Submit Project",
+        "description": "Log in to your account and submit project link before Tuesday noon 12:00 UTC-0 for last week's mission"
+      },
+      "evaluate": {
+        "title": "Evaluation & Awards",
+        "description": "Admin reviews and evaluates, updates last week's mission progress on Wednesday noon 12:00 UTC-0"
+      },
+      "reward": {
+        "title": "Get Rewards",
+        "description": "Winners will receive bounty rewards. Please complete your profile. Prize money will be distributed next Monday after results are announced."
+      }
+    },
+    "rules": {
+      "title": "Mission Guidelines",
+      "items": [
+        "Mission Status: Open (accepting submissions), Pending (under review), Closed (ended)",
+        "Mission Requirements: 1) Bounty mission descriptions are for inspiration only—feel free to create and express; the more engaging, the better. 2) Projects must be fully functional with a polished UI and an English version (multi-language support is preferred). Demos are not accepted. 3) All projects must be original work. Remixing or plagiarism is strictly prohibited.",
+        "How to View Winning Projects:Check your submitted mission status via \"My Submission\", or navigate to \"Closed\" Missions and click \"View Winning Project\".",
+        "Mission Submission: One submission per mission, with editing allowed (go to \"My Submission\" → \"Edit\").",
+        "Reward Reminder: Update your personal information accurately in the \"Profile\" module to ensure reward delivery within one week of winning. The platform will not be held responsible for payment errors due to incorrect information."
+      ]
+    }
+  },
+  "foundingCreatorBadge": {
+    "label": "Founding Creator",
+    "ariaLabel": "Visit Founding Creator profile"
+  },
+  "tasks": {
+    "sort": "Sort:",
+    "sortOptions": {
+      "created_at": "Publish Time",
+      "reward_amount": "Bounty Amount"
+    },
+    "status": "Status:",
+    "statusOptions": {
+      "all": "All",
+      "Open": "Open",
+      "Pending": "Pending",
+      "Closed": "Closed"
+    },
+    "statusLabels": {
+      "Open": "Open",
+      "Pending": "Pending", 
+      "Closed": "Closed"
+    },
+    "date": "Publish Date:",
+    "startDate": "Start Date:",
+    "endDate": "End Date:",
+    "noAvailableDates": "No available dates",
+    "loading": "Loading missions...",
+    "pagination": "Page {{current}}/{{total}}",
+    "completed": "Completed",
+    "viewWinnerProject": "View Winning Project",
+    "participants": "participants",
+    "daysAgo": "days ago",
+    "submitTask": "Submit Mission",
+    "cannotSubmit": "Cannot Submit",
+    "comment": "Comment",
+    "noTasks": "No matching missions available",
+    "submitDialog": {
+      "title": "Submit Mission: {{title}}",
+      "projectUrl": "Project URL *",
+      "placeholder": "https://...",
+      "note": "Please provide a working project URL and ensure the link is accessible",
+      "socialMediaUrl": "Social Media Share URL *",
+      "socialMediaPlaceholder": "Any social media platform share link",
+      "socialMediaNote": "Please provide a valid social media share link for your project. Only users who share to social media are eligible for winner selection.",
+      "submit": "Confirm Submit",
+      "submitting": "Submitting...",
+      "cancel": "Cancel",
+      "invalidUrl": "Please enter a valid https:// URL",
+      "invalidSocialUrl": "Please provide a valid social media share link (supports any social media platform)"
+    },
+    "comments": {
+      "title": "Mission Comments",
+      "placeholder": "Write your comment...",
+      "send": "Send",
+      "noComments": "No comments yet, be the first to comment!",
+      "anonymous": "Anonymous User",
+      "viewAll": "View all comments ({{count}})",
+      "reply": "Reply",
+      "like": "Like",
+      "allComments": "All comments ({{count}})",
+      "replyingTo": "Replying to {{name}}",
+      "sendFailed": "Failed to send comment"
+    }
+  },
+  "countdown": {
+    "title": "Countdown to Submission Deadline for Open Bounty Mission",
+    "days": "Days",
+    "hours": "Hours", 
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "timezone": "All times in UTC-0"
+  },
+  "maliciousSubmissionPolicy": {
+    "title": "Malicious Submission Policy",
+    "description": "Any malicious submissions including but not limited to: content containing spam, scam attempts, inappropriate material, or intentionally harmful links will be immediately disqualified. Users who submit malicious content may face permanent account suspension from bounty missions."
+  },
+  "maliciousPolicy": {
+    "title": "Malicious Submission Policy",
+    "warning": "Warning: Policy on Malicious Submissions",
+    "description": "User accounts found engaging in malicious submission behaviors will be directly added to the bounty task blacklist. Such behaviors include, but are not limited to:",
+    "behaviors": [
+      "Submissions that do not align with the task's core theme",
+      "Submitting a single work to multiple tasks", 
+      "Repeatedly submitting incorrect or irrelevant projects"
+    ],
+    "enforcement": "This policy is enforced to ensure the fairness and efficiency of the bounty task ecosystem."
+  },
+  "submissions": {
+    "totalSubmissions": "Total Submissions",
+    "awards": "Awards Won",
+    "pending": "Pending Review",
+    "statusLabels": {
+      "submitted": "Submitted",
+      "not_awarded": "Not Awarded",
+      "awarded": "Awarded"
+    },
+    "bounty": "Bounty: ${{amount}}",
+    "submitTime": "Submit Time: {{time}}",
+    "viewProject": "View Project",
+    "reviewNotes": "Review Notes:",
+    "awardedWork": "🎉 Award Winning Project",
+    "noSubmissions": "No submission records",
+    "noSubmissionsDesc": "Go to mission display page to participate in bounty missions!",
+    "projectUrl": "Project URL",
+    "socialMediaUrl": "Social Media Share URL",
+    "socialMediaPlaceholder": "Any social media platform share link",
+    "editSuccess": "Edit successful!",
+    "editFailed": "Edit failed:"
+  },
+  "admin": {
+    "operations": "Admin Operations",
+    "publishTask": "Publish New Mission",
+    "filters": "Filters:",
+    "statusFilter": "All Status",
+    "dateFilter": {
+      "all": "All Time",
+      "today": "Today",
+      "week": "This Week",
+      "month": "This Month"
+    },
+    "tabs": {
+      "users": "User Management",
+      "countdown": "Countdown Settings",
+      "emptyTitle": "No {{status}} missions",
+      "emptyOpen": "No missions are currently open. Click the button above to create a new mission.",
+      "emptyPending": "No missions are currently pending review.",
+      "emptyClosed": "No missions have been closed."
+    },
+    "batchOperations": {
+      "open": "Batch Open",
+      "crowd": "Batch Pause",
+      "close": "Batch Close",
+      "selectAll": "Select All",
+      "unselectAll": "Unselect All",
+      "selectedTasks": "Selected {{selected}} / {{total}} missions",
+      "selectedSubmissions": "Selected {{selected}} / {{total}} submissions",
+      "batchOpen": "Batch Open",
+      "batchPending": "Batch Review",
+      "batchClose": "Batch Close",
+      "batchAward": "Batch Award",
+      "batchNotAward": "Batch Not Award",
+      "onlySingleHint": "(single selection only)",
+      "onlyOneAwardedTitle": "Only one submission per mission can be awarded",
+      "onlyOneAwarded": "Only one submission per mission can be awarded. Please select a single submission.",
+      "confirmBatchStatus": "Are you sure you want to change the status of {{count}} selected missions to {{status}}?",
+      "confirmBatchStatusSubmissions": "Are you sure you want to set {{count}} selected submissions to {{status}} status?",
+      "batchSuccess": "Successfully updated {{count}} missions",
+      "batchSubmissionSuccess": "Successfully set {{count}} submissions to {{status}} status",
+      "batchFailed": "Batch operation failed: ",
+      "batchFailedGeneric": "Batch operation failed, please try again later",
+      "batchUpdateFailedGeneric": "Batch update failed, please try again later",
+      "noTasksSelected": "Please select missions to batch operate on first",
+      "noSubmissionsSelected": "Please select submissions to batch operate on first",
+      "statusAwarded": "Awarded",
+      "statusNotAwarded": "Not Awarded"
+    },
+    "taskCard": {
+      "viewSubmissions": "View Submissions",
+      "edit": "Edit Mission",
+      "delete": "Delete Mission",
+      "participants": "{{count}} participants",
+      "winnerLink": "Winning Project Link"
+    },
+    "submissions": {
+      "title": "Mission Submission Management",
+      "noSubmissions": "No submissions",
+      "award": "Set as Awarded",
+      "notAward": "Set as Not Awarded",
+      "viewLink": "View Project Link",
+      "notes": "Notes:",
+      "projectLinkLabel": "Project Link:",
+      "editUrlPlaceholder": "Enter new project link",
+      "saveEdit": "Save",
+      "cancelEdit": "Cancel",
+      "deleteSubmission": "Delete Submission"
+    },
+    "createTask": {
+      "title": "Publish New Mission",
+      "taskTitle": "Mission Title *",
+      "taskDescription": "Mission Description *",
+      "coverImage": "Cover Image URL",
+      "bountyAmount": "Bounty Amount *",
+      "publish": "Publish Mission",
+      "cancel": "Cancel",
+      "titlePlaceholder": "Enter mission title",
+      "descriptionPlaceholder": "Describe mission requirements and content in detail",
+      "uploadImage": "Upload Image",
+      "orSeparator": "or",
+      "imageUrlPlaceholder": "Or enter image URL",
+      "bountyPlaceholder": "Enter bounty amount",
+      "publishDateLabel": "Publish Date",
+      "publishDateHint": "If not set, the current time will be used as the publish time",
+      "initialParticipantsLabel": "Initial Participants",
+      "initialParticipantsPlaceholder": "Set initial participant count (optional)",
+      "initialParticipantsHint": "Sets the mission's initial participant count, which updates automatically based on actual submissions",
+      "winnerUrlLabel": "Winning Project URL",
+      "winnerUrlPlaceholder": "Enter the winning project URL (optional)",
+      "winnerUrlHint": "After setting the winning project URL, the mission status will automatically change to Closed"
+    },
+    "editTask": {
+      "title": "Edit Mission",
+      "taskTitle": "Mission Title",
+      "taskTitlePlaceholder": "Enter mission title",
+      "taskDescription": "Mission Description",
+      "taskDescriptionPlaceholder": "Describe mission requirements and content in detail",
+      "coverImage": "Cover Image",
+      "coverImagePlaceholder": "Enter image URL (optional)",
+      "bountyAmount": "Bounty Amount",
+      "bountyAmountPlaceholder": "Enter bounty amount",
+      "taskStatus": "Mission Status",
+      "save": "Save Changes",
+      "cancel": "Cancel",
+      "uploadImage": "Upload Image",
+      "orSeparator": "or",
+      "publishDateLabel": "Publish Date",
+      "publishDateHint": "Changing the publish date will affect the mission's order in lists",
+      "participantsStatsLabel": "Participant Statistics",
+      "initialParticipantsEditableLabel": "Initial Participants (editable)",
+      "actualSubmissionsLabel": "Actual Submissions (auto-counted)",
+      "displayTotalLabel": "Displayed Total (auto-calculated)",
+      "displayTotalHint": "Displayed Total = Initial Participants + Actual Submissions. Only Initial Participants is manually editable.",
+      "winnerUrlLabel": "Winning Project URL",
+      "winnerUrlPlaceholder": "Enter the winning project URL",
+      "winnerUrlHint": "After setting the winning project URL, the mission status will automatically change to Closed"
+    },
+    "confirmDelete": "Are you sure you want to delete this mission? This action cannot be undone.",
+    "confirmBatch": "Are you sure you want to update {{count}} missions' status to \"{{status}}\"?",
+    "messages": {
+      "loginRequired": "Login required",
+      "adminRequired": "Admin permission required",
+      "createSuccess": "Mission created successfully!",
+      "updateSuccess": "Mission updated successfully!",
+      "deleteSuccess": "Mission deleted successfully!",
+      "reviewSuccess": "Review results updated!",
+      "batchComplete": "Batch update completed!",
+      "createFailed": "Creation failed:",
+      "updateFailed": "Update failed:",
+      "deleteFailed": "Deletion failed:",
+      "batchFailed": "Batch update failed",
+      "fillComplete": "Please fill in complete mission information",
+      "alreadySubmitted": "You have already submitted this mission",
+      "submitSuccess": "Submitted successfully!",
+      "submitFailed": "Submission failed:",
+      "commentFailed": "Comment failed:",
+      "tryAgain": "Please try again later",
+      "networkError": "Network error, please try again later",
+      "resubmitSuccess": "Resubmitted successfully! Your new project has been updated",
+      "selectImageFile": "Please select an image file",
+      "imageTooLarge": "Image size cannot exceed 5MB",
+      "imageUploadFailedCreate": "Image upload failed. Continue creating the mission?\n\nClick \"OK\" to continue without image\nClick \"Cancel\" to retry image upload",
+      "imageUploadFailedEdit": "Image upload failed. Continue saving other changes?\n\nClick \"OK\" to continue saving without image\nClick \"Cancel\" to retry image upload",
+      "imageUploadFailedNote": "\nNote: Image upload failed, the mission was created without a cover image.",
+      "taskUpdated": "Mission updated successfully!",
+      "taskUpdatedImageFailed": "\nNote: Image upload failed, but other information has been saved.",
+      "updateFailedPrefix": "Update failed: ",
+      "updateFailedRetry": "Update failed, please try again later",
+      "deleteFailedPrefix": "Deletion failed: ",
+      "deleteFailedRetry": "Deletion failed, please try again later",
+      "submissionUrlUpdated": "Submission link updated!",
+      "submissionDeleted": "Submission record deleted!",
+      "reviewResultUpdated": "Review result updated!",
+      "reviewNotesUpdated": "Review Notes updated!",
+      "confirmDeleteSubmission": "Are you sure you want to delete this submission? This action cannot be undone."
+    },
+    "countdown": {
+      "setTimeRequired": "Please set start time and end time",
+      "endTimeAfterStart": "End time must be later than start time",
+      "settingsUpdated": "Countdown settings updated",
+      "saveFailed": "Save failed",
+      "eventNamePlaceholder": "Enter event name",
+      "managementTitle": "Countdown Management",
+      "loading": "Loading...",
+      "eventNameLabel": "Event Name",
+      "startTimeLabel": "Start Time (UTC)",
+      "endTimeLabel": "End Time (UTC)",
+      "timezoneTitle": "Timezone Notes:",
+      "timezoneNote1": "All times use the UTC-0 timezone",
+      "timezoneNote2": "The countdown displays above the Mission Guidelines",
+      "timezoneNote3": "Automatically hidden after the countdown ends",
+      "saving": "Saving...",
+      "saveButton": "Save Settings"
+    },
+    "users": {
+      "fetchFailed": "Failed to fetch user list",
+      "operationSuccess": "Operation successful",
+      "operationFailed": "Operation failed",
+      "refreshing": "Refreshing...",
+      "refresh": "Refresh",
+      "title": "User Blacklist Management",
+      "searchPlaceholder": "Search username or user ID...",
+      "allUsersFilter": "All Users",
+      "blacklistedFilter": "Blacklisted Users",
+      "normalFilter": "Normal Users",
+      "clearFilters": "Clear all filters",
+      "loadingList": "Loading user list...",
+      "emptyNoUsers": "No user data",
+      "emptyNoMatch": "No matching users found",
+      "emptyHintNoUsers": "The system currently has no user profiles",
+      "emptyHintNoMatch": "Please try adjusting your search or filter",
+      "columnUser": "User",
+      "columnSubmissions": "Submissions",
+      "columnAwards": "Awards",
+      "columnLastSubmission": "Last Submission",
+      "columnStatus": "Status",
+      "columnActions": "Actions",
+      "neverSubmitted": "Never submitted",
+      "blacklistedStatus": "Blacklisted",
+      "normalStatus": "Normal",
+      "processing": "Processing...",
+      "unblacklistAction": "Remove from Blacklist",
+      "blacklistAction": "Add to Blacklist",
+      "totalUsers": "{{count}} users total | Showing {{shown}} results",
+      "paginationInfo": "Showing {{from}} - {{to}} of {{total}}"
+    }
+  },
+  "common": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "submit": "Submit",
+    "submitting": "Submitting...",
+    "close": "Close",
+    "online": "Online",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Info",
+    "unknownError": "Unknown error"
+  },
+  "profile": {
+    "title": "Profile",
+    "settings": "Profile Settings",
+    "editProfile": "Edit Profile",
+    "completed": "Profile Completed",
+    "notSet": "Not Set",
+    "noBio": "No bio set",
+    "lastUpdated": "Last Updated",
+    "common": {
+      "online": "Online"
+    },
+    "fields": {
+      "discordId": "Discord ID",
+      "paypalEmail": "PayPal Email",
+      "ageRange": "Age Range",
+      "profession": "Profession",
+      "bio": "Bio"
+    },
+    "placeholders": {
+      "discordId": "Enter your Discord username#identifier",
+      "paypalEmail": "Enter PayPal email address",
+      "ageRange": "Select age range",
+      "profession": "Enter your profession",
+      "bio": "Tell us about yourself..."
+    },
+    "ageRanges": {
+      "under_18": "Under 18",
+      "18_25": "18-25 years",
+      "26_35": "26-35 years",
+      "36_45": "36-45 years",
+      "46_55": "46-55 years",
+      "over_55": "Over 55"
+    },
+    "hints": {
+      "discordId": "For contact and award notifications, format: username#1234",
+      "paypalEmail": "For receiving rewards, ensure the email is accurate",
+      "bio": "Briefly introduce your skills and experience, max 200 characters"
+    },
+    "save": "Save Profile",
+    "saving": "Saving...",
+    "messages": {
+      "saveSuccess": "Profile saved successfully!",
+      "saveError": "Save failed, please try again"
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "unreadCount": "{{count}} unread",
+    "empty": {
+      "title": "No messages",
+      "description": "You will receive notifications when your project wins awards"
+    },
+    "types": {
+      "award": "Award Notification",
+      "system": "System Notification",
+      "task_update": "Task Update"
+    },
+    "relatedTask": "Related mission: {{title}}",
+    "unread": "Unread",
+    "timeAgo": {
+      "justNow": "Just now",
+      "hoursAgo": "{{count}} hours ago",
+      "daysAgo": "{{count}} days ago"
+    },
+    "awardTitle": "🎉 Congratulations!",
+    "awardMessage": "Your submission for mission {{taskTitle}} has won an award!"
+  },
+  "tabs": {
+    "profile": "Profile",
+    "notifications": "Notifications"
+  },
+  "countdown": {
+    "title": "Countdown to Submission Deadline for Open Bounty Mission",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "timezone": "All times in UTC-0"
+  },
+  "maliciousPolicy": {
+    "title": "Malicious Submission Policy",
+    "warning": "Warning: Policy on Malicious Submissions",
+    "description": "User accounts found engaging in malicious submission behaviors will be directly added to the bounty task blacklist. Such behaviors include, but are not limited to:",
+    "behaviors": [
+      "Submissions that do not align with the task's core theme",
+      "Submitting a single work to multiple tasks",
+      "Repeatedly submitting incorrect or irrelevant projects"
+    ],
+    "enforcement": "This policy is enforced to ensure the fairness and efficiency of the bounty task ecosystem."
+  }
+}

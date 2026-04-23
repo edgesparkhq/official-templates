@@ -18,6 +18,17 @@ Default full-stack EdgeSpark starter with:
 
 See [fullstack/README.md](./fullstack/README.md) for template-specific details.
 
+### `bounty-tasks`
+
+Opinionated full-stack starter implementing a working bounty-tasks app:
+
+- Hono API on Cloudflare Workers with Drizzle ORM and initial migrations
+- React SPA via Vite with Tailwind, i18n, and router
+- checked-in `edgespark.toml` and default auth configuration
+- agent instruction files for AI-assisted workflows
+
+See [bounty-tasks/README.md](./bounty-tasks/README.md) for template-specific details.
+
 ## Usage
 
 Initialize a new app from a published template source:
