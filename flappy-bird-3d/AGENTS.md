@@ -4,8 +4,8 @@ Fullstack EdgeSpark project.
 
 ## Structure
 
-- `server/` — Hono API on Cloudflare Workers (see server/CLAUDE.md)
-- `web/` — React SPA via Vite (see web/CLAUDE.md)
+- `server/` — Hono API on Cloudflare Workers (see server/AGENTS.md)
+- `web/` — React SPA via Vite (see web/AGENTS.md)
 - `configs/` — Project config files (auth)
 - `edgespark.toml` — Project configuration
 
