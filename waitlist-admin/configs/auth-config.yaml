@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://schemas.edgespark.dev/v1/auth-config.schema.json
+
+# Sign-up is enabled by default so you can register the first account that
+# will become the admin. Once that account exists and `ADMIN_EMAIL` matches
+# its email, set `disableSignUp: true` and re-run `edgespark auth apply`
+# to lock public sign-ups.
+disableSignUp: false
+
+providerEmailPassword:
+  config:
+    minPasswordLength: 8
+    requireEmailVerification: false
+    requirePasswordResetEmailVerification: false
+    revokeSessionsOnPasswordReset: false
+  enabled: true
+
+providerGoogle:
+  config: {}
+  enabled: false
