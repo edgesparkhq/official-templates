@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://schemas.edgespark.dev/v1/auth-config.schema.json
+
+disableSignUp: false
+
+providerEmailPassword:
+  config:
+    minPasswordLength: 8
+    requireEmailVerification: false
+    requirePasswordResetEmailVerification: false
+    revokeSessionsOnPasswordReset: false
+  enabled: true
+
+providerGithub:
+  config:
+    clientIdVarRef: GITHUB_CLIENT_ID
+    clientSecretRef: GITHUB_CLIENT_SECRET
+  enabled: true
+
+providerGoogle:
+  config:
+    clientIdVarRef: GOOGLE_CLIENT_ID
+    clientSecretRef: GOOGLE_CLIENT_SECRET
+  enabled: true
+
+providerDiscord:
+  config:
+    clientIdVarRef: DISCORD_CLIENT_ID
+    clientSecretRef: DISCORD_CLIENT_SECRET
+  enabled: true
+
+providerGitlab:
+  config:
+    clientIdVarRef: GITLAB_CLIENT_ID
+    clientSecretRef: GITLAB_CLIENT_SECRET
+  enabled: true
+
