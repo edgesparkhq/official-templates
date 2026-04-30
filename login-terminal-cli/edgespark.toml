@@ -1,0 +1,9 @@
+project_id = "REPLACED_ON_INIT"
+
+[server]
+path = "server"
+
+[web]
+path = "web"
+output_path = "web/dist"
+
