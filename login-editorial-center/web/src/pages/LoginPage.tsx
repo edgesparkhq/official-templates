@@ -230,10 +230,6 @@ export function LoginPage() {
 
         <section className="login-editorial-art-panel">
           <img src="/illustration.png" alt="" aria-hidden="true" />
-          <div className="login-editorial-powered">
-            <Logo size={13} />
-            <span>Powered by EdgeSpark</span>
-          </div>
         </section>
       </main>
     </div>
