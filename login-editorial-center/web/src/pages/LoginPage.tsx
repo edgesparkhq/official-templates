@@ -9,13 +9,13 @@ type LoadingState = OAuthProvider | 'email' | null
 
 const inputStyle: React.CSSProperties = {
   width: '100%',
-  height: '34px',
-  padding: '0 12px',
+  height: '40px',
+  padding: '0 14px',
   border: '1px solid #e2ded8',
   borderRadius: '4px',
   background: '#fff',
   color: '#211f1c',
-  fontSize: '12px',
+  fontSize: '13px',
   outline: 'none',
   boxSizing: 'border-box',
   transition: 'border-color 140ms ease, box-shadow 140ms ease',
@@ -29,7 +29,7 @@ const inputFocusStyle: React.CSSProperties = {
 
 const oauthButtonStyle: React.CSSProperties = {
   width: '100%',
-  height: '34px',
+  height: '38px',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -38,7 +38,7 @@ const oauthButtonStyle: React.CSSProperties = {
   borderRadius: '4px',
   background: '#fff',
   color: '#312f2b',
-  fontSize: '11px',
+  fontSize: '13px',
   fontWeight: 700,
   cursor: 'pointer',
 }
