@@ -35,20 +35,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 34px 18px;
-  background: #1f1f1f;
+  padding: 0;
+  background: #fbfaf8;
 }
 
 .login-editorial-shell {
-  width: min(1120px, 100%);
-  min-height: min(660px, calc(100vh - 68px));
+  width: 100%;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(360px, 1fr);
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
+  border: 0;
+  border-radius: 0;
   background: #fbfaf8;
-  box-shadow: 0 22px 80px rgba(0, 0, 0, 0.34);
+  box-shadow: none;
 }
 
 .login-editorial-form-panel {
