@@ -1,9 +1,0 @@
-project_id = "4075cfc6-61cd-4686-8cff-585880280a95"
-
-[server]
-path = "server"
-
-[web]
-path = "web"
-output_path = "web/dist"
-
