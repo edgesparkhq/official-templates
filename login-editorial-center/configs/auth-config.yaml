@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://schemas.edgespark.dev/v1/auth-config.schema.json
+
+disableSignUp: false
+
+providerEmailPassword:
+  config:
+    minPasswordLength: 8
+    requireEmailVerification: false
+    requirePasswordResetEmailVerification: false
+    revokeSessionsOnPasswordReset: false
+  enabled: true
+
+# To enable GitHub OAuth:
+# 1. Create a GitHub OAuth App at https://github.com/settings/applications/new
+#    Authorization callback URL: https://<your-domain>/api/_es/auth/callback/github
+# 2. edgespark var set GITHUB_CLIENT_ID=<your-client-id>
+# 3. edgespark secret set GITHUB_CLIENT_SECRET  (opens browser for secure entry)
+# 4. Set enabled: true and uncomment clientIdVarRef / clientSecretRef below
+# 5. edgespark auth apply && edgespark deploy
+providerGithub:
+  config: {}
+  enabled: false
+# providerGithub:
+#   config:
+#     clientIdVarRef: GITHUB_CLIENT_ID
+#     clientSecretRef: GITHUB_CLIENT_SECRET
+#   enabled: true
+
+# To enable Google OAuth:
+# 1. Create OAuth credentials at https://console.cloud.google.com/apis/credentials
+#    Authorized redirect URI: https://<your-domain>/api/_es/auth/callback/google
+# 2. edgespark var set GOOGLE_CLIENT_ID=<your-client-id>
+# 3. edgespark secret set GOOGLE_CLIENT_SECRET  (opens browser for secure entry)
+# 4. Set enabled: true and uncomment clientIdVarRef / clientSecretRef below
+# 5. edgespark auth apply && edgespark deploy
+providerGoogle:
+  config: {}
+  enabled: false
+# providerGoogle:
+#   config:
+#     clientIdVarRef: GOOGLE_CLIENT_ID
+#     clientSecretRef: GOOGLE_CLIENT_SECRET
+#   enabled: true
